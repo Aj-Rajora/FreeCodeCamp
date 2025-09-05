@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+        <h1 id="title">aRiwn Service Form</h1>
+        <p id="description">Filling this form helps you get better service from aRiwn</p>
+        </header>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+                <label for="email" id="email-label" >Emial</label>
+                <input type="email" id="email" name="email"placeholder="Enter your email here" required>
+                <label for="number" id="number-label">Age <em>(optional)</em></label>
+                <input type="number" id="number" min="13" max="120" placeholder="your age" value"age">
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">For what role are you using this service</label>
+                <select id="dropdown" name="role">
+                    <option value="" disabled selected hidden>Select (any one)</option>
+                    <option value="shipper">Shipper</option>
+                    <option value="Driver">Driver</option>
+                    <option value="logistics company">Logistics company</option>
+                    <option value="fleet/vehicle owner">Fleet/Vehicle owner</option>
+                </select>
+            </fieldset>
+            <fieldset class="check">
+                <label><input type="radio" name="service" value="carrier" checked> Provide vehicle</label>
+                <label><input id="shipper" type="radio"  value="shipper" name="service"> Book vehicle</label>
+            </fieldset>
+            <fieldset class="check">
+                <label>
+                    <input type="checkbox" name="improvement" value="instant-payment" id="payment"> Payment after unloading</label>
+                <label>
+                <input type="checkbox" name="improvement" value="Return-booking" id="Return-booking"> Return booking assurities</label>
+                <label>
+                <input type="checkbox" name="improvement" value="Transparent-rates"> Transparent and upfront rates</label>
+                <label>
+                <input type="checkbox" name="improvement" value="route-optimization" id="route-optimization"> Route Optimization</label>
+                <label>
+                <input type="checkbox" name="improvement" value="client-access" id="client-access"> Accesss to bigger clients</label>
+                <label>
+                <input type="checkbox" name="improvement" value="puntual" id="puntual"> Ontime delivery</label>
+            </fieldset>
+            <fieldset>
+                <label for="comment">Feedback</label>
+                <textarea name="comment" id="comment" rows="5" cols="25" placeholder="Please provide your suggestion if any....."></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
