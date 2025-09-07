@@ -1,2 +1,2 @@
 # FreeCodeCamp
-All the learning projects that are created to learn.
+All the learning projects that are created to during learning. 
